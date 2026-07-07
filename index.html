@@ -1,0 +1,319 @@
+<!DOCTYPE HTML>
+<!--
+	Big Picture by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Simran Patel Portfolio</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script>(function(){try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="#intro" class="logo-badge">SP</a></h1>
+				<div class="header-right">
+				<nav>
+					<ul>
+						<li class="active"><a href="#intro">Intro</a></li>
+						<li><a href="#one">About</a></li>
+						<li><a href="#three">Experience</a></li>
+						<li><a href="#work">Projects</a></li>
+						<li><a href="#skills">Skills</a></li>
+						<li><a href="#contact">Connect</a></li>
+						<li><a href="assets/resume/Simran_Patel_Resume.pdf" class="button resume-button" download>Resume</a></li>
+					</ul>
+				</nav>
+				<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+				</div>
+			</header>
+
+		<!-- Intro -->
+			<section id="intro" class="main style1 dark fullscreen">
+				<pre class="code-snippet" aria-hidden="true">-- Query to analyze user behavior
+SELECT
+  DATE_TRUNC('day', event_time) AS day,
+  event_type,
+  COUNT(*) AS total_events
+FROM events
+WHERE event_time &gt;= CURRENT_DATE - INTERVAL '30 days'
+GROUP BY 1, 2
+ORDER BY 1, 2;</pre>
+				<div class="log-scroll" aria-hidden="true">
+					<div class="log-scroll-track">
+						<div>[2024-05-20 10:15:23] INFO&nbsp; Data pipeline started</div>
+						<div>[2024-05-20 10:15:24] INFO&nbsp; Extracting data from source</div>
+						<div>[2024-05-20 10:15:29] INFO&nbsp; Transforming data</div>
+						<div>[2024-05-20 10:15:45] INFO&nbsp; Loading data to warehouse</div>
+						<div>[2024-05-20 10:15:47] INFO&nbsp; Pipeline completed successfully</div>
+						<div>[2024-05-20 10:15:23] INFO&nbsp; Data pipeline started</div>
+						<div>[2024-05-20 10:15:24] INFO&nbsp; Extracting data from source</div>
+						<div>[2024-05-20 10:15:29] INFO&nbsp; Transforming data</div>
+						<div>[2024-05-20 10:15:45] INFO&nbsp; Loading data to warehouse</div>
+						<div>[2024-05-20 10:15:47] INFO&nbsp; Pipeline completed successfully</div>
+					</div>
+				</div>
+				<div class="content">
+					<header>
+						<h2>Simran <span class="accent-text">Patel</span></h2>
+					</header>
+					<div class="hero-divider"><span></span></div>
+					<p class="hero-tagline">Turning data into insights that drive action</p>
+					<p class="hero-tagline accent-text">Empowering Data-Driven Decisions</p>
+				</div>
+			</section>
+
+		<!-- About -->
+			<section id="one" class="main style2 right dark fullscreen">
+				<div class="content box style2 glass-card">
+					<header>
+						<img src="images/profile-headshot.jpg" alt="Simran Patel" class="profile-photo" />
+						<h2>About</h2>
+					</header>
+					<p>
+						I’m a Data &amp; Database Engineer with 4+ years building production ETL pipelines, optimizing SQL performance, and delivering scalable analytics platforms across AWS and Azure.
+						My journey started at
+						<a href="https://paruluniversity.ac.in/">Parul University</a>,
+						and I honed my skills further during my master’s in computer science at
+						<a href="https://www.stevens.edu/">Stevens Institute of Technology</a>.
+					<br /><br />When I’m not solving data puzzles, I’m off exploring new places and cultures.
+					Travel keeps me creative and adaptable, and I’m always on the lookout for new ways to make an impact with data.</p>
+				</div>
+			</section>
+
+			<!--Three-->
+				<section id="three" class="main style2 dark fullscreen">
+				<div class="timeline">
+					<div class="timeline-entry left">
+						<div class="timeline-icon"></div>
+						<div class="timeline-content">
+							<div class="timeline-header">
+								<div class="timeline-badge"><i class="fas fa-database"></i></div>
+								<div>
+									<h3>Data Operational Analyst</h3>
+									<p><em>Madison L, New York</em></p>
+								</div>
+							</div>
+							<hr class="timeline-divider" />
+							<ul class="timeline-bullets">
+								<li><i class="fas fa-check-circle"></i><span>Architected production ETL pipelines using PySpark, Airflow &amp; Azure Data Factory with CDC-style incremental load across 5+ data sources, reducing data integrity errors by 40%.</span></li>
+								<li><i class="fas fa-check-circle"></i><span>Built log analysis tooling that cut mean time to resolution by 35%.</span></li>
+							</ul>
+							<hr class="timeline-divider" />
+							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> Aug 2024 - Present</div>
+						</div>
+					</div>
+					<div class="timeline-entry right">
+						<div class="timeline-icon"></div>
+						<div class="timeline-content">
+							<div class="timeline-header">
+								<div class="timeline-badge"><i class="fas fa-graduation-cap"></i></div>
+								<div>
+									<h3>M.S. in Computer Science</h3>
+									<p><em>Stevens Institute of Technology, Hoboken, NJ</em></p>
+								</div>
+							</div>
+							<hr class="timeline-divider" />
+							<p class="timeline-description">Graduate coursework in advanced computing and data systems, building on hands-on industry experience in data engineering and analytics.</p>
+							<hr class="timeline-divider" />
+							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> Sep 2022 - May 2024</div>
+						</div>
+					</div>
+					<div class="timeline-entry left">
+						<div class="timeline-icon"></div>
+						<div class="timeline-content">
+							<div class="timeline-header">
+								<div class="timeline-badge"><i class="fas fa-chart-line"></i></div>
+								<div>
+									<h3>Data Analyst</h3>
+									<p><em>Vaibhav Gems, India</em></p>
+								</div>
+							</div>
+							<hr class="timeline-divider" />
+							<ul class="timeline-bullets">
+								<li><i class="fas fa-check-circle"></i><span>Diagnosed SQL performance degradation via indexing, partitioning &amp; schema normalization across Oracle DB and SQL Server, accelerating data retrieval by 30%.</span></li>
+								<li><i class="fas fa-check-circle"></i><span>Built ETL pipelines in Azure Synapse &amp; Databricks processing 500GB+ datasets.</span></li>
+							</ul>
+							<hr class="timeline-divider" />
+							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> Apr 2021 - Jun 2022</div>
+						</div>
+					</div>
+					<div class="timeline-entry right">
+						<div class="timeline-icon"></div>
+						<div class="timeline-content">
+							<div class="timeline-header">
+								<div class="timeline-badge"><i class="fas fa-chart-bar"></i></div>
+								<div>
+									<h3>Data Analyst Intern</h3>
+									<p><em>Vaibhav Gems, India</em></p>
+								</div>
+							</div>
+							<hr class="timeline-divider" />
+							<ul class="timeline-bullets">
+								<li><i class="fas fa-check-circle"></i><span>Deployed an SSRS multi-source reporting pipeline across disparate SQL Server databases.</span></li>
+								<li><i class="fas fa-check-circle"></i><span>Led schema alignment with cross-functional teams, improving reporting accuracy by 25%.</span></li>
+							</ul>
+							<hr class="timeline-divider" />
+							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> Jan 2020 - Mar 2021</div>
+						</div>
+					</div>
+					<div class="timeline-entry left">
+						<div class="timeline-icon"></div>
+						<div class="timeline-content">
+							<div class="timeline-header">
+								<div class="timeline-badge"><i class="fas fa-graduation-cap"></i></div>
+								<div>
+									<h3>B.Tech in Information Technology</h3>
+									<p><em>Parul University, India</em></p>
+								</div>
+							</div>
+							<hr class="timeline-divider" />
+							<p class="timeline-description">Undergraduate foundation in information technology and computer science fundamentals.</p>
+							<hr class="timeline-divider" />
+							<div class="timeline-date"><i class="fas fa-calendar-alt"></i> Aug 2017 - Feb 2022</div>
+						</div>
+					</div>
+				</div>
+				</section>
+				
+		
+		<!-- Projects -->
+			<section id="work" class="main style3 primary">
+				<div class="content">
+					<header>
+						<h2>Projects</h2>
+						<p>A collection of my personal projects</p>
+					</header>
+
+					<!-- Gallery  -->
+						<div class="gallery">
+							<article class="from-left">
+								<a href="project_details.html" class="image fit">
+									<img src="images/thumbs/Cardiovascular_thumb.jpg" title="Cardiovascular Heart Disease Analysis" alt="" />
+									<span class="gallery-caption">Cardiovascular Heart Disease Analysis</span>
+								</a>
+							</article>
+							<article class="from-right">
+								<a href="project-yahoo-finance.html" class="image fit">
+									<img src="images/thumbs/yahoo_fianance.jpg" title="Yahoo Finance Stock Analysis" alt="" />
+									<span class="gallery-caption">Yahoo Finance Stock Analysis</span>
+								</a>
+							</article>
+							<article class="from-left">
+								<a href="project-cdc-pipeline.html" class="image fit">
+									<img src="images/thumbs/cdc_pipeline_thumb.jpg" title="PostgreSQL CDC Replication Pipeline" alt="" />
+									<span class="gallery-caption">PostgreSQL CDC Replication Pipeline</span>
+								</a>
+							</article>
+							<article class="from-right">
+								<a href="project-jewelsmate.html" class="image fit">
+									<img src="images/thumbs/jewelsmate_thumb.jpg" title="Jewels Mate" alt="" />
+									<span class="gallery-caption">Jewels Mate <span class="status-badge">Currently Working</span></span>
+								</a>
+							</article>
+						</div>
+
+				</div>
+			</section>
+	
+				<!-- Skills -->
+				<section id="skills" class="main style3 left dark fullscreen">
+					<div class="content box style2">
+						<header>
+							<h2>Skills</h2>
+						</header>
+						<div id="skills-section">
+							<div class="skills-container">
+							  <div class="skill">Python</div>
+							  <div class="skill">PySpark</div>
+							  <div class="skill">SQL</div>
+							  <div class="skill">PostgreSQL</div>
+							  <div class="skill">Oracle DB</div>
+							  <div class="skill">SQL Server</div>
+							  <div class="skill">Snowflake</div>
+							  <div class="skill">AWS (Redshift, Glue, S3)</div>
+							  <div class="skill">Azure (Data Factory, Synapse)</div>
+							  <div class="skill">Airflow</div>
+							  <div class="skill">Kafka</div>
+							  <div class="skill">Databricks</div>
+							  <div class="skill">dbt</div>
+							  <div class="skill">Power BI</div>
+							  <div class="skill">Tableau</div>
+							  <div class="skill">Git</div>
+							  <!-- Add more skills as needed -->
+							</div>
+						  </div>
+					</div>
+				</section>
+
+		<!-- Contact -->
+			<section id="contact" class="main style3 secondary">
+				<div class="content">
+					<header>
+						<h2>Connect</h2>
+						<p>Let's connect to explore how I can add value to your data team!</p>
+					</header>
+					<div class="box">
+						<form method="post" action="#">
+							<div class="fields">
+								<div class="field half"><input type="text" name="name" placeholder="Name" /></div>
+								<div class="field half"><input type="email" name="email" placeholder="Email" /></div>
+								<div class="field"><textarea name="message" placeholder="Message" rows="3"></textarea></div>
+							</div>
+							<ul class="actions special">
+								<li><input type="submit" value="Send Message" /></li>
+							</ul>
+						</form>
+
+						<ul class="contact-icons">
+							<li><a href="https://github.com/isimranpatel" class="icon brands fa-github" target="_blank" title="GitHub"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/isimranpatel/" class="icon brands fa-linkedin-in" target="_blank" title="LinkedIn"><span class="label">LinkedIn</span></a></li>
+							<li><a href="mailto:simranpatel0132@gmail.com" class="icon solid fa-envelope" title="Email"><span class="label">Email</span></a></li>
+							<li><a href="tel:+19082597056" class="icon solid fa-phone" title="Phone"><span class="label">Phone</span></a></li>
+						</ul>
+						<p class="contact-details">simranpatel0132@gmail.com &nbsp;&bull;&nbsp; +1 (908) 259-7056</p>
+					</div>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+
+				<!-- Icons -->
+					<!-- <ul class="icons">
+						<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon brands fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a href="#" class="icon brands fa-dribbble"><span class="label">Dribbble</span></a></li>
+						<li><a href="#" class="icon brands fa-pinterest"><span class="label">Phone</span></a></li>
+					</ul>
+
+				Menu -->
+					<!-- <ul class="menu">
+						<li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+					</ul> -->
+
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/theme-toggle.js"></script>
+			
+
+	</body>
+</html>

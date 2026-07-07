@@ -1,0 +1,119 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>PostgreSQL CDC Replication Pipeline | Simran Patel</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<script>(function(){try{if(localStorage.getItem('theme')==='dark')document.documentElement.setAttribute('data-theme','dark');}catch(e){}})();</script>
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Header -->
+			<header id="header">
+				<h1><a href="index.html" class="logo-badge">SP</a></h1>
+				<div class="header-right">
+				<nav>
+					<ul>
+						<li><a href="index.html#work">&larr; Back to Portfolio</a></li>
+					</ul>
+				</nav>
+				<button id="theme-toggle" class="theme-toggle" type="button" aria-label="Toggle theme"><i class="fas fa-moon"></i></button>
+				</div>
+			</header>
+
+		<!-- Intro -->
+			<section id="projectintro" class="main style1 dark fullscreen" style="background-image: url('images/thumbs/cdc_pipeline_thumb.jpg');">
+				<div class="content">
+					<header>
+						<h2>PostgreSQL CDC Replication Pipeline</h2>
+					</header>
+					<p>Streaming row-level Postgres changes to an analytics store with WAL, Debezium &amp; Kafka</p>
+				</div>
+			</section>
+
+		<!-- What I Did -->
+			<section class="main style3 primary">
+				<div class="content">
+					<header>
+						<h2>What I Did</h2>
+					</header>
+					<p>
+						Built an end-to-end change-data-capture pipeline that streams row-level changes out of PostgreSQL in real time.
+						The pipeline chains five layers: PostgreSQL's write-ahead log (WAL) via logical replication slots, a Debezium
+						connector that extracts change events and handles schema evolution, Kafka for fault-tolerant event streaming, a
+						Python consumer that validates schemas, deduplicates events, and routes bad messages to a dead-letter queue, and
+						a replica PostgreSQL analytics store on the receiving end. I wrote diagnostic scripts to detect replication slot
+						bloat, LSN gaps, and schema drift, added continuous lag and queue-depth monitoring, and documented runbooks for
+						each failure mode. The whole thing runs via Docker Compose and includes a harness for simulating 1,000+ events to
+						exercise the pipeline under load.
+					</p>
+				</div>
+			</section>
+
+		<!-- Why I Did It -->
+			<section class="main style3 secondary">
+				<div class="content">
+					<header>
+						<h2>Why I Did It</h2>
+					</header>
+					<p>
+						Replication lag and CDC failures are a recurring theme in my day job, so I wanted to build the whole pattern
+						from scratch — WAL, Debezium, Kafka, dead-letter handling — to understand exactly where things break (slot
+						bloat, missed transactions, schema drift) instead of only debugging someone else's pipeline. Treating failure
+						modes as first-class, with runbooks and monitoring built in from the start, mirrors how I think CDC pipelines
+						should be built in production.
+					</p>
+				</div>
+			</section>
+
+		<!-- Tech Stack -->
+			<section class="main style3 primary">
+				<div class="content">
+					<header>
+						<h2>Tech Stack</h2>
+					</header>
+					<div class="skills-container">
+						<div class="skill">Python 3.11</div>
+						<div class="skill">PostgreSQL (WAL)</div>
+						<div class="skill">Debezium</div>
+						<div class="skill">Apache Kafka</div>
+						<div class="skill">kafka-python</div>
+						<div class="skill">Docker Compose</div>
+						<div class="skill">CloudWatch</div>
+					</div>
+				</div>
+			</section>
+
+		<!-- Links -->
+			<section class="main style3 secondary">
+				<div class="content">
+					<header>
+						<h2>Links</h2>
+					</header>
+					<ul class="actions special">
+						<li><a href="https://github.com/isimranpatel/cdc-pipeline" class="button" target="_blank">View on GitHub</a></li>
+						<li><a href="index.html#work" class="button">Back to Projects</a></li>
+					</ul>
+				</div>
+			</section>
+
+		<!-- Footer -->
+			<footer id="footer">
+			</footer>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.poptrox.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/theme-toggle.js"></script>
+
+	</body>
+</html>
